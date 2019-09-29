@@ -1,0 +1,20 @@
+var apple = createSprite(200,200);
+apple.setAnimation("apple");
+function draw () {
+  background("white");
+  if(keyDown("g")){
+     apple.scale+=1
+    
+  }
+  if(keyDown("s")){
+    apple.scale-=1
+    
+  }
+  
+  
+  
+  drawSprites();
+fill("blue");
+  text("hold on g or s and look!",38,353);
+
+}
